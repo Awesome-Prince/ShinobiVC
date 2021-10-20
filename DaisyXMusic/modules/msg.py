@@ -18,11 +18,11 @@ from DaisyXMusic.config import ASSISTANT_NAME, PROJECT_NAME
 
 
 class Messages:
-    START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+    START_MSG = "Welcome to my Bath Tub [{}](tg://user?id={})! /n/n Come and satisfy me by listening all my meliodic songs UwU /n/n Use /help to know what i can do /n Have a great listening ahead!!"
     HELP_MSG = [
         ".",
         f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+**Hey Senpai! Welcome back to {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
 
@@ -34,7 +34,7 @@ class Messages:
 1) Make bot admin (Group and in channel if use cplay)
 2) Start a voice chat
 3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry, didn't worked either? Try asking help by the maker of the bot
 
 **For Channel Music Play**
 1) Make me admin of your channel 
