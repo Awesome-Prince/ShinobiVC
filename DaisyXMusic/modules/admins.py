@@ -39,7 +39,7 @@ async def update_admin(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("❇️ Senpai cache refreshed!")
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -48,11 +48,11 @@ async def update_admin(client, message: Message):
 async def pause(_, message: Message):
     chat_id = get_chat_id(message.chat)
     (
-      await message.reply_text("▶️ Paused!")
+      await message.reply_text("▶️ ok, i won't sing, hmph!!")
     ) if (
         callsmusic.pause(chat_id)
     ) else (
-        await message.reply_text("❗ Nothing is playing!")
+        await message.reply_text("❗ I ain't singing baka!!")
     )
         
 
@@ -63,11 +63,11 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     chat_id = get_chat_id(message.chat)
     (
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ kek i want to sing!")
     ) if (
         callsmusic.resume(chat_id)
     ) else (
-        await message.reply_text("❗ Nothing is paused!")
+        await message.reply_text("❗ Nobody can stop me sing now!")
     )
         
 
@@ -78,7 +78,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ Nothing is streaming!")
+        await message.reply_text("❗ Nothing is streaming baka!")
     else:
         try:
             queues.clear(chat_id)
@@ -86,7 +86,7 @@ async def stop(_, message: Message):
             pass
 
         await callsmusic.stop(chat_id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ Stopped streaming hmph!")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -109,7 +109,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**")
+    await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Moaning **{qeue[0][0]}**")
     
 
 @Client.on_message(command('mute') & other_filters)
@@ -119,15 +119,15 @@ async def mute(_, message: Message):
     chat_id = get_chat_id(message.chat)
     result = await callsmusic.mute(chat_id)
     (
-        await message.reply_text("✅ Muted")
+        await message.reply_text("✅ Muted, fine?")
     ) if (
         result == 0
     ) else (
-        await message.reply_text("❌ Already muted")
+        await message.reply_text("❌ Already muted ughhh")
     ) if (
         result == 1
     ) else (
-        await message.reply_text("❌ Not in call")
+        await message.reply_text("❌ Not in call UwU")
     )
 
         
@@ -160,4 +160,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("❇️ Senpai cache refreshed!")
