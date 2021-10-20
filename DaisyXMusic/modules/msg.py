@@ -18,7 +18,7 @@ from DaisyXMusic.config import ASSISTANT_NAME, PROJECT_NAME
 
 
 class Messages:
-    START_MSG = "Welcome to my Bath Tub [{}](tg://user?id={})! /n/n Come and satisfy me by listening all my meliodic songs UwU /n/n Use /help to know what i can do /n Have a great listening ahead!!"
+    START_MSG = "Ｗｅｌｃｏｍｅ ｔｏ ｍｙ Ｂａｔｈ Ｔｕｂ [{}](tg://user?id={})! \n\n ᴄᴏᴍᴇ ᴀɴᴅ ꜱᴀᴛɪꜱꜰʏ ᴍᴇ ʙʏ ʟɪꜱᴛᴇɴɪɴɢ ᴀʟʟ ᴍʏ ᴍᴇʟᴏᴅɪᴄ ꜱᴏɴɢꜱ ᴜᴡᴜ \n\n Use /help to know what i can do \n Have a great listening ahead!!"
     HELP_MSG = [
         ".",
         f"""
