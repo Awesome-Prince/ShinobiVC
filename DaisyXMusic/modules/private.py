@@ -39,11 +39,11 @@ def _start(client, message):
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
             [[
-               InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+               InlineKeyboardButton("➕ Call me to your place UwU", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("Main Group 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
             ],
             [
-               InlineKeyboardButton("Network 🌐", url=f"https://t.me/{UPDATES_CHANNEL}"),
-               InlineKeyboardButton("Main Group 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
+               InlineKeyboardButton("Network 🌐", url=f"https://t.me/{UPDATES_CHANNEL}")
             ]]
         ),
         reply_to_message_id=message.message_id,
@@ -95,11 +95,11 @@ def map(pos):
     elif pos == len(tr.HELP_MSG) - 1:
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [[
-                    InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                    InlineKeyboardButton("➕ Call me to your place UwU", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            InlineKeyboardButton(text="Main Group 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
                   ],
                   [
-                    InlineKeyboardButton(text="Network 🌐", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton(text="Main Group 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
+                    InlineKeyboardButton(text="Network 🌐", url=f"https://t.me/{UPDATES_CHANNEL}")
                   ],
                   [
                     InlineKeyboardButton(text="◀️", callback_data=f"help+{pos-1}")
