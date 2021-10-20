@@ -48,7 +48,6 @@ def _start(client, message):
         ),
         reply_to_message_id=message.message_id,
     )
-ɴᴇᴛᴡᴏrk
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
