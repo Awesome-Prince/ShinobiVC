@@ -39,16 +39,16 @@ def _start(client, message):
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
             [[
-               InlineKeyboardButton("➕ Call me to your place UwU", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-               InlineKeyboardButton("Main Group 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
+               InlineKeyboardButton("➕ ꜱᴜᴍᴍᴏɴ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("ᴍᴀɪɴ ɢʀᴏᴜᴘ 🥂", url=f"https://t.me/{SUPPORT_GROUP}")
             ],
             [
-               InlineKeyboardButton("Network 🌐", url=f"https://t.me/{UPDATES_CHANNEL}")
+               InlineKeyboardButton("ɴᴇᴛᴡᴏrk🌐", url=f"https://t.me/{UPDATES_CHANNEL}")
             ]]
         ),
         reply_to_message_id=message.message_id,
     )
-
+ɴᴇᴛᴡᴏrk
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
