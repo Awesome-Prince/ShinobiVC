@@ -189,15 +189,17 @@ def r_ply(type_):
     mar = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🏃", "Leave"),
-                InlineKeyboardButton("⏸", "pause"),
-                InlineKeyboardButton("▶️", "resume"),
-                InlineKeyboardButton("⏭", "skip"),
+                InlineKeyboardButton("💨", "Leave")
+                [
+                    InlineKeyboardButton("⏸ ᴘᴀᴜꜱᴇ", "pause"),
+                    InlineKeyboardButton("▶️ ʀᴇꜱᴜᴍᴇ", "resume")
+                    ]
+                InlineKeyboardButton("⏭ ꜱᴋɪᴘ", "skip"),
             ],
             [
-                InlineKeyboardButton("Playlist", "playlist"),
+                InlineKeyboardButton("📜 ᴘʟᴀʏʟɪꜱᴛ", "playlist"),
             ],
-            [InlineKeyboardButton("❌ Close", "cls")],
+            [InlineKeyboardButton("🔚 ᴄʟᴏꜱᴇ", "cls")],
         ]
     )
     return mar
@@ -256,11 +258,11 @@ async def hfmm(_, message):
     if status == "ON" or status == "on" or status == "On":
         lel = await message.reply("`Processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Music Player Already Activated In This Chat")
+            await lel.edit("Kiyomi Already Activated In This Chat")
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"Music Player Successfully Enabled For Users In The Chat {message.chat.id}"
+            f"Kiyomi Successfully Enabled For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -296,7 +298,7 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "<b>Now Playing</b> in {}".format(cb.message.chat.title)
+        msg = "<b>Now Singing</b> in {}".format(cb.message.chat.title)
         msg += "\n- " + now_playing
         msg += "\n- Req by " + by
         temp.pop(0)
@@ -485,10 +487,10 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "Meow joined your chat to spread beauty bish 🎶"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>Beauty joined your chat, welcome her 🌸</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -504,7 +506,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f" {user.first_name} not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
         )
         return
     text_links = None
@@ -552,10 +554,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton("📜 ᴘʟᴀʏʟɪꜱᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("📓 ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="🥺 ᴄʟᴏꜱᴇ", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -660,24 +662,24 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            "1️⃣", callback_data=f"plll 0|{query}|{user_id}"
+                            "1", callback_data=f"plll 0|{query}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "2️⃣", callback_data=f"plll 1|{query}|{user_id}"
+                            "2", callback_data=f"plll 1|{query}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "3️⃣", callback_data=f"plll 2|{query}|{user_id}"
+                            "3", callback_data=f"plll 2|{query}|{user_id}"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            "4️⃣", callback_data=f"plll 3|{query}|{user_id}"
+                            "4", callback_data=f"plll 3|{query}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "5️⃣", callback_data=f"plll 4|{query}|{user_id}"
+                            "5", callback_data=f"plll 4|{query}|{user_id}"
                         ),
                     ],
-                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="ᴄʟᴏꜱᴇ", callback_data="cls")],
                 ]
             )
             await lel.edit(toxxt, reply_markup=koyboard, disable_web_page_preview=True)
@@ -722,14 +724,14 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                        InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                        InlineKeyboardButton("📜 ᴘʟᴀʏʟɪꜱᴛ", callback_data="playlist"),
+                        InlineKeyboardButton("📓 ᴍᴇɴᴜ", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                        InlineKeyboardButton(text="🥂 ʏᴏᴜᴛʜᴏᴏʙ", url=f"{url}"),
+                        InlineKeyboardButton(text="🔽 ᴅᴏᴡɴʟᴏᴀᴅ", url=f"{dlurl}"),
                     ],
-                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="ᴄʟᴏꜱᴇ", callback_data="cls")],
                 ]
             )
             requested_by = message.from_user.first_name
