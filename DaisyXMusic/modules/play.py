@@ -190,6 +190,7 @@ def r_ply(type_):
         [
             [
                 InlineKeyboardButton("💨", "Leave")
+                ]
                 [
                     InlineKeyboardButton("⏸ ᴘᴀᴜꜱᴇ", "pause"),
                     InlineKeyboardButton("▶️ ʀᴇꜱᴜᴍᴇ", "resume")
