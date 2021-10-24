@@ -52,11 +52,11 @@ from youtubesearchpython import SearchVideos
 
 from yt_dlp import YoutubeDL
 
-from DaisyXMusic.function.inlinehelper import arq
+from ShinobiVC.function.inlinehelper import arq
 
-from DaisyXMusic.function.pluginhelpers import get_text, progress
+from ShinobiVC.function.pluginhelpers import get_text, progress
 
-from DaisyXMusic.services.pyrogram import pbot as Client
+from ShinobiVC.services.pyrogram import pbot as Client
 
 dl_limit = 0
 
