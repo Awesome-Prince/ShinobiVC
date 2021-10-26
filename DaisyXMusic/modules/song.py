@@ -46,8 +46,6 @@ import requests
 
 import wget
 
-import youtube_dl
-
 from pyrogram import Client, filters
 
 from pyrogram.errors import FloodWait, MessageNotModified
