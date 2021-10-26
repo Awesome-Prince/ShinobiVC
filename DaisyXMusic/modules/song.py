@@ -76,7 +76,7 @@ from youtube_search import YoutubeSearch
 
 from youtubesearchpython import SearchVideos
 
-from helpers.filters import command
+from DaisyXMusic.helpers.filters import command
 
 from config import DURATION_LIMIT, BOT_USERNAME, BOT_NAME, arq, aiohttpsession as session
 
