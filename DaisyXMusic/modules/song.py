@@ -78,7 +78,7 @@ from youtubesearchpython import SearchVideos
 
 from DaisyXMusic.helpers.filters import command
 
-from DaisyXMusic.config import DURATION_LIMIT, BOT_USERNAME, BOT_NAME, aiohttpsession as session
+from DaisyXMusic.config import DURATION_LIMIT, BOT_USERNAME, BOT_NAME
 
 @Client.on_message(filters.command(["song", f"song@{BOT_USERNAME}"]) & ~filters.channel)
 
