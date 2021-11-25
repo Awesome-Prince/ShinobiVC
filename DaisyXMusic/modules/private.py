@@ -117,5 +117,14 @@ def map(pos):
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**🙋‍♀️ Hello there! I can play music in the voice chats of telegram groups & channels.**""",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start")]])
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [
+            InlineKeyboardButton("Click here for help", url=f"https://t.me/{BOT_USERNAME}?start")]
+[
+    InlineKeyboardButton("🌐 Network 🌐", url=f"https://t.me/SHINOBINET")
+    ]
+                ]
+            )
     )
+    
