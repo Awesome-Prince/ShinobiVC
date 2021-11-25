@@ -120,18 +120,11 @@ async def ghelp(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
             
-            InlineKeyboardButton("Click here for help", url=f"https://t.me/{BOT_USERNAME}?start")]
-    
-
-   
+            InlineKeyboardButton("Click here for help", url=f"https://t.me/{BOT_USERNAME}?start")] 
    [
     
     InlineKeyboardButton("🌐 Network 🌐", url=f"https://t.me/SHINOBINET")
     ]
-      
-        
-                
-        
-            
-    )
+          )
+        ]
     
