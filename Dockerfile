@@ -1,17 +1,8 @@
-#Python based docker image
-FROM python:3.9.5-buster
-
+FROM python:3.9.6-slim-buster
 RUN apt-get update && apt-get upgrade -y
-
-#Installing Requirements
-RUN apt-get install -y ffmpeg python3-pip opus-tools
-
-#Updating pip
+RUN apt-get install git curl python3-pip ffmpeg -y
 RUN python3.9 -m pip install -U pip
-
-COPY . .
-
+COPY . /app
+WORKDIR /app
 RUN python3.9 -m pip install -U -r requirements.txt
-
-#Running VCBot
-CMD ["python3.9","main.py"]
+CMD python3.9 -m TamilVc

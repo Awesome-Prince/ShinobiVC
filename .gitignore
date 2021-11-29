@@ -1,22 +1,8 @@
-# vim
-unknown_errors.txt
-[._]*.sw[a-p]
-*.webm
-*.mp3
-*.mp4
-*.webp
-*.weba
-*.part
-*.ytdl
-final.png
-background.png
-temp.png
-# python
-/venv/
+.env
+*.log
+venv/
+.idea/
+*.session
+raw_files/
+downloads/
 __pycache__/
-# tgbot
-/config.py
-/*.session
-/*.session-journal
-*.raw
-group_call.log
