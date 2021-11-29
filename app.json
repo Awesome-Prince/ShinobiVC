@@ -1,86 +1,63 @@
 {
-  "name": "DaisyXMusic",
-  "logo": "https://telegra.ph/file/36ff1b571aa11df5812de.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/TeamDaisyX/DaisyXMusic",
-  "stack": "container",
-  "buildpacks": [
-   {
-     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-   },
-   {
-     "url": "heroku/python"
-   }   
-  ],        
+  "name": "Telegram Voice Chat Bot",
+  "description": "Telegram Voice-Chat Bot Written In Python Using Pytgcalls & Pyrogram.",
+  "repository": "https://github.com/thehamkercat/Telegram_VC_Bot",
+  "logo": "https://i.imgur.com/8S8NVy0.png",
+  "keywords": [
+    "python",
+    "telegram",
+    "bot",
+    "voicechat",
+    "youtube",
+    "telegram-bot",
+    "pyrogram",
+    "pytgcalls",
+    "tgcalls",
+    "jiosaavn",
+    "telegram-vcbot",
+    "telegram-musicbot"
+  ],
+  "stack": "heroku-20",
   "env": {
-    "SESSION_NAME": {
-      "description": "Pyrogram session string",
-      "required": true
+    "API_ID": {
+            "description": "API_ID of your Telegram Account my.telegram.org/apps",
+            "required": true
     },
-    "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
-      "required": true
+    "API_HASH": {
+            "description": "API_HASH of your Telegram Account my.telegram.org/apps",
+            "required": true
     },
-    "BOT_USERNAME": {
-      "description": "Your bot's username without @",
-      "required": true
-    },
-    "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
-      "required": false,
-      "value": ""
-    },
-    "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
-      "required": false,
-      "value": "DaisySupport_Official"
-    },
-    "PROJECT_NAME": {
-      "description": "Your MusicPlayer project Name.",
-      "required": false,
-      "value": "DaisyXMusic v5"
-    },
-    "ASSISTANT_NAME": {
-      "description": "Your MusicPlayer's assistant Username without @.",
-      "required": true
+    "SESSION_STRING": {
+            "description": "Session string, Check the readme if you don't know how to get this.",
+            "required": true
     },
     "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
-      "required": false,
-      "value": ""
-    },    
-    "BG_IMAGE": {
-      "description": "BG image of bot (Use transparent one) [IGNORE].",
-      "required": false,
-      "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
-    },     
-    "UPDATES_CHANNEL": {
-      "description": "Updates Channel without @ [Leave this if you don't have one].",
-      "required": false,
-      "value": "DaisyXupdates"
-    },    
-    "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
-      "required": true
+	    "description": "Get this from @ARQRobot.",
+	    "required": true
     },
-    "PMPERMIT": {
-      "description": "Change to turn off",
-      "required": false,
-      "value": "ENABLE"
-    },    
-    "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
-      "required": true
+    "DEFAULT_SERVICE": {
+            "description": "Must be one of youtube/saavn.",
+            "value": "saavn",
+            "required": true
     },
-    "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
-    },
-    "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
-      "required": true,
-      "value": "10"
+    "BITRATE": {
+            "description": "Must be 512/320.",
+            "value": "512",
+            "required": true
     }
-  }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
 }

@@ -1,12 +1,18 @@
-.env
-*.log
-.git/
-.idea/
-str.py
-Procfile
-README.md
-downloads/
-raw_files/
-.gitignore
-runtime.txt
+# vim
+[._]*.sw[a-p]
+*.webm
+*.mp3
+*.mp4
+*.webp
+*.weba
+*.part
+*.ytdl
+final.png
+background.png
+temp.png
+# python
+venv/
 __pycache__/
+# tgbot
+input.raw
+group_call.log
