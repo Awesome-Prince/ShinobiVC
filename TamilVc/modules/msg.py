@@ -5,7 +5,7 @@ from TamilVc.config import PROJECT_NAME
 from TamilVc.config import SUPPORT_GROUP
 from TamilVc.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info. Report 🐛 Bugs At : @HimawariSupport ."
+      START_MSG = "**Welcome to my Bath Tub** ❤ [{}](tg://user?id={})! \n\n ᴄᴏᴍᴇ ᴀɴᴅ ꜱᴀᴛɪꜱꜰʏ ᴍᴇ ʙʏ ʟɪꜱᴛᴇɴɪɴɢ ᴀʟʟ ᴍʏ ᴍᴇʟᴏᴅɪᴄ ꜱᴏɴɢꜱ ᴜᴡᴜ \n Use /help to know what i can do \n Have a great listening ahead!!."
       HELP_MSG = [
         ".",
 f"""
