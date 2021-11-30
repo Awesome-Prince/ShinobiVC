@@ -5,7 +5,7 @@ from TamilVc.config import PROJECT_NAME
 from TamilVc.config import SUPPORT_GROUP
 from TamilVc.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "Ｗｅｌｃｏｍｅ ｔｏ ｍｙ Ｂａｔｈ Ｔｕｂ [{}](tg://user?id={})! \n\nᴄᴏᴍᴇ ᴀɴᴅ ꜱᴀᴛɪꜱꜰʏ ᴍᴇ ʙʏ ʟɪꜱᴛᴇɴɪɴɢ ᴀʟʟ ᴍʏ ᴍᴇʟᴏᴅɪᴄ ꜱᴏɴɢꜱ ᴜᴡᴜ \nUse /help to know what i can do ^^ \nHave a great listening ahead!!."
+      START_MSG = "Ｗｅｌｃｏｍｅ ｔｏ ｍｙ Ｂａｔｈ Ｔｕｂ [{}](tg://user?id={})! \n\nᴄᴏᴍᴇ ᴀɴᴅ ꜱᴀᴛɪꜱꜰʏ ᴍᴇ ʙʏ ʟɪꜱᴛᴇɴɪɴɢ ᴀʟʟ ᴍʏ ᴍᴇʟᴏᴅɪᴄ ꜱᴏɴɢꜱ ᴜᴡᴜ \n\nUse /help to know what i can do ^^ \n\nHave a great listening ahead!!."
       HELP_MSG = [
         ".",
 f"""
