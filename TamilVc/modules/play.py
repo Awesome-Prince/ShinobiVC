@@ -593,7 +593,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/SHINOBINET")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -616,7 +616,7 @@ async def play(_, message: Message):
             toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
-            emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
+            emojilist = ["1","2️","3️","4️","5️",]
 
             while j < 5:
                 toxxt += f"{emojilist[j]} <b>Title - [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})</b>\n"
@@ -628,15 +628,15 @@ async def play(_, message: Message):
             koyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("1️⃣", callback_data=f'plll 0|{query}|{user_id}'),
-                        InlineKeyboardButton("2️⃣", callback_data=f'plll 1|{query}|{user_id}'),
-                        InlineKeyboardButton("3️⃣", callback_data=f'plll 2|{query}|{user_id}'),
+                        InlineKeyboardButton("1️", callback_data=f'plll 0|{query}|{user_id}'),
+                        InlineKeyboardButton("2️", callback_data=f'plll 1|{query}|{user_id}'),
+                        InlineKeyboardButton("3️", callback_data=f'plll 2|{query}|{user_id}'),
                     ],
                     [
-                        InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
-                        InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
+                        InlineKeyboardButton("4️", callback_data=f'plll 3|{query}|{user_id}'),
+                        InlineKeyboardButton("5️", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="Close", callback_data="cls")],
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -682,7 +682,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/ShinobiNet")],
             ]
             )
             requested_by = message.from_user.first_name
@@ -836,7 +836,7 @@ async def ytplay(_, message: Message):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),      
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/ShinobiNet")],
             ]
     )
     requested_by = message.from_user.first_name
@@ -975,7 +975,7 @@ async def deezer(client: Client, message_: Message):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/ShinobiNet")],
             ]
     )
     file_path = await convert(wget.download(url))
@@ -1110,7 +1110,7 @@ async def jiosaavn(client: Client, message_: Message):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/ShinobiNet")],
             ]
     )
     file_path = await convert(wget.download(slink))
@@ -1214,7 +1214,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                     InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+                [InlineKeyboardButton(text="🌐 Network 🌐", url=f"https://t.me/ShinobiNet")],
             ]
     )
     requested_by = useer_name
