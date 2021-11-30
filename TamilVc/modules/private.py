@@ -13,10 +13,10 @@ def _start(client, message):
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("➕ Summon Me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("Owner", url=f"https://t.me/weebarsh"), 
-            InlineKeyboardButton("Chit Chat", url=f"https://t.me/AnimeSync")
+            InlineKeyboardButton("Owner 😼", url=f"https://t.me/weebarsh"), 
+            InlineKeyboardButton("Chit Chat 🥂", url=f"https://t.me/AnimeSync")
             ],[
-            InlineKeyboardButton("🌐 Network", url=f"https://t.me/ShinobiNet")
+            InlineKeyboardButton("🌐 Network 🌐", url=f"https://t.me/ShinobiNet")
           ]]
         ),
         reply_to_message_id=message.message_id
@@ -63,8 +63,8 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Summon Me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = 'Chit Chat', url=f"https://t.me/AnimeSync"),
-             InlineKeyboardButton(text = 'Owner', url=f"https://t.me/weebarsh")],
+            [InlineKeyboardButton(text = 'Chit Chat 🥂', url=f"https://t.me/AnimeSync"),
+             InlineKeyboardButton(text = 'Owner 😼', url=f"https://t.me/weebarsh")],
             [InlineKeyboardButton(text = '🌐 Network 🌐', url=f"https://t.me/ShinobiNet")],
             [InlineKeyboardButton(text = '⫷', callback_data = f"help+{pos-1}")]
         ]
